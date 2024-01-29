@@ -1,5 +1,5 @@
 ---
-description: Several examples of menu.
+description: 几个菜单的示例
 ---
 
 # 示例GUI菜单
@@ -15,7 +15,7 @@ Here you have an example of a menu using placeholders to display a set of essent
 > /papi ecloud download Essentials\
 > /papi reload
 
-## [Complexe action](https://github.com/Maxlego08/zMenuExample/blob/master/complex\_actions.yml)
+## [复杂动作](https://github.com/Maxlego08/zMenuExample/blob/master/complex\_actions.yml)
 
 An example of a gui converted from [DeluxeMenu](https://wiki.helpch.at/clips-plugins/deluxemenus/files#requirements-menu) to zMenu. The menu contains all the elements proposed by [DelexeMenu](https://wiki.helpch.at/clips-plugins/deluxemenus/files#requirements-menu).
 

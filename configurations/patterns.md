@@ -1,4 +1,4 @@
-# Patterns
+# 样板
 
 The patterns allow you to have a list of buttons that can be used in several inventories. Perfect to manage the decoraction of your inventories without having to copy the same thing dozens of times.
 

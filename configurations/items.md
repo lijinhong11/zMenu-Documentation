@@ -1,4 +1,4 @@
-# Items
+# 物品
 
 Before you start configuring the plugin itemstack make sure you are using the correct material for your version of the game.
 
@@ -6,9 +6,9 @@ Each button must be accompanied by an itemstack (except in certain specific case
 
 ```yaml
 item:
-  material: <material>
-  amount: <amount>
-  data: <data, only avaible between 1.8 and 1.12>
+  material: <材料>
+  amount: <数量>
+  data: <数据, only avaible between 1.8 and 1.12>
   durability: <durability>
   url: <player skin in base64>
   name: <display name>
@@ -27,69 +27,69 @@ item:
   color: <leather armor color>
 ```
 
-## Material
+## 材料
 
 ```yaml
-material: <material>
+material: <材质>
 ```
 
-The material of the item. You can use a placeholder to display a material.
+物品的材料。 你可以使用一个占位符来显示一个材料。
 
-> **Supported material values:**
+> **支持的材料:**
 >
-> * [Material](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) - Example: `material: STONE`
-> * [Placeholder](https://www.spigotmc.org/resources/placeholderapi.6245/) value - Example: `material: %your_placeholder_material%`
-> * [HeadDatabase](https://www.spigotmc.org/resources/head-database.14280/) (hdb:\<ID>) Example: `material: hdb:<ID>`
-> * [Oraxen](https://www.spigotmc.org/resources/%E2%98%84%EF%B8%8F-oraxen-add-items-blocks-armors-hats-food-furnitures-plants-and-gui-1-18-1-20-1.72448/) (oraxen:\<item name>) Example: `material: oraxen:<item name>`
-> * [ItemAdder](https://www.spigotmc.org/resources/%E2%9C%A8itemsadder%E2%AD%90emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/) (itemsadder:\<item name>) Example: `material:` itemsadder`:<item name>`
-> * [SlimeFun](https://github.com/Slimefun/Slimefun4) (slimefun:\<item name>) Example: `material:` slimefun`:<item name>`
-> * [Nova](https://github.com/xenondevs/Nova) (nova:\<item/block name>) Example: `material: nova:<item/block name>`
+> * [Material](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Material.html) - 示例: `material: STONE`
+> * [Placeholder](https://www.spigotmc.org/resources/placeholderapi.6245/) value - 示例: `material: %your_placeholder_material%`
+> * [HeadDatabase](https://www.spigotmc.org/resources/head-database.14280/) (hdb:\<ID>) 示例: `material: hdb:<ID>`
+> * [Oraxen](https://www.spigotmc.org/resources/%E2%98%84%EF%B8%8F-oraxen-add-items-blocks-armors-hats-food-furnitures-plants-and-gui-1-18-1-20-1.72448/) (oraxen:\<item name>) 示例: `material: oraxen:<item name>`
+> * [ItemAdder](https://www.spigotmc.org/resources/%E2%9C%A8itemsadder%E2%AD%90emotes-mobs-items-armors-hud-gui-emojis-blocks-wings-hats-liquids.73355/) (itemsadder:\<item name>) 示例: `material:` itemsadder`:<item name>`
+> * [SlimeFun](https://github.com/Slimefun/Slimefun4) (slimefun:\<item name>) 示例: `material:` slimefun`:<item name>`
+> * [Nova](https://github.com/xenondevs/Nova) (nova:\<item/block name>) 示例: `material: nova:<item/block name>`
 
 ***
 
-## Amount
+## 数量
 
 ```yaml
-amount: <amount>
+amount: <数量>
 ```
 
-The amount of the itemstack. You can use a placeholder to have a dynamic amount.
+物品堆的数量。 你可以使用一个占位符来动态设置物品堆的数量。
 
 ***
 
-## Data
+## 数据
 
 ```yaml
-data: <data, only avaible between 1.8 and 1.12>
+data: <数据，仅1.8-1.12可用>
 ```
 
-The material data, only available for versions between **1.8** and **1.12**. By default its 0
+材料数据，仅在1.8-1.12可用，默认为0
 
 ***
 
-## Durability
+## 耐久
 
 ```yaml
-durability: <durability>
+durability: <耐久>
 ```
 
-The durability of the item, by default it is 0.
+物品的耐久，默认为0.
 
 ***
 
 ## Url
 
 ```yaml
-url: <player skin in base64>
+url: <玩家皮肤base64>
 ```
 
-Allows to display a head with a url in base64. You can find the values of the heads on the site [minecraft-head.com](https://minecraft-heads.com/).
+Allows to display a head with a url in base64. You can find the values of the heads on the site [minecraft-heads.com](https://minecraft-heads.com/).
 
 You must take the content in "Value" of the category "Other":
 
-![minecraft-head.com example of value](../.gitbook/assets/base64.png)
+![minecraft-heads.com 示例](../.gitbook/assets/base64.png)
 
-Example
+示例
 
 ```yaml
 url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvNjM3YjhhMzk4MzdiYzNkNThmMDljOGM2ZTUzOTYyZDMzZjlmYTBiNjUzOThhNzc5MzUzYWRlMWUxNDcxM2VmZiJ9fX0="
@@ -97,16 +97,16 @@ url: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubm
 
 ***
 
-## Name
+## 名称
 
 ```yaml
-name: <display name>
+name: <显示名>
 ```
 
-The name that will be displayed on the item. Works with PlaceholderAPI.
+物品将会显示的名字。可以搭配PlaceholderAPI一起使用。
 
 {% hint style="info" %}
-If your server has Kyori Adventure, you can use the [mini message format](https://docs.adventure.kyori.net/minimessage/format.html).
+如果你的服务器有Kyori Adventure这个依赖(Paper及其下游自带), 你可以使用[mini message格式](https://docs.adventure.kyori.net/minimessage/format.html).
 {% endhint %}
 
 ***
@@ -121,15 +121,15 @@ lore:
   - ...
 ```
 
-Allows to display the lore of the item. Works with PlaceholderAPI.
+允许物品显示lore。可以搭配PlaceholderAPI一起使用。
 
 ***
 
-## Potion
+## 药水
 
 ```yaml
-  potion: <potion effect type>
-  level: <potion level, 1 or 2> # 1 by default
+  potion: <药水效果类型>
+  level: <药水等级, 1 或 2> # 默认为1
   splash: <potion splash true or false>
   extended: <potion extended true of flase>
 ```
@@ -142,7 +142,7 @@ Warning, a potion cannot be extended and with a level 2
 
 {% hint style="info" %}
 ```yml
-# For potions in 1.8 up to 1.12 you have to do like this:
+# 在1.8-1.12中你需要这样做:
 material: POTION
 durability: 16454
 ```
@@ -150,78 +150,78 @@ durability: 16454
 
 ***
 
-## Glow
+## 发光
 
 ```yaml
-glow: <true of false>
+glow: <true 或 false>
 ```
 
-Allows the item to shine. Add random enchant and HIDE\_ENCHANT itemflag.
+允许物品发光。 这会给物品添加一个随机附魔以及 HIDE\_ENCHANT （隐藏附魔）物品标志.
 
 ***
 
-## ModelID
+## 模型ID
 
 ```yaml
-modelID: <custom model id>
+modelID: <自定义模型id>
 ```
 
-Allows you to put a custom model id on the item
+允许你在物品上设置模型ID（对材质包有用）
 
 ***
 
-## Enchantments
+## 附魔
 
 ```yaml
 enchants:
-  - <enchantment name>,<enchantment level>
+  - <附魔名称>,<附魔等级>
 ```
 
-Allows you to add enchantments, you have to put the name of the enchantment then the level of the enchantment, like this: `ENCHANT,ENCHANT_LEVEL` List of enchantments available: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html)
+允许你添加附魔, you have to put the name of the enchantment then the level of the enchantment, like this: `ENCHANT,ENCHANT_LEVEL` List of enchantments available: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/enchantments/Enchantment.html)
 
 ***
 
-## Flags
+## 标志
 
 ```yaml
 flags:
-  - <flag 1>
-  - <flag 2>
+  - <标志 1>
+  - <标志 2>
   - ...
 ```
 
-List of flags: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html)
+标志列表： [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/inventory/ItemFlag.html)
 
 ***
 
-## Color
+## 颜色
 
 ```yaml
 type: LEATHER_CHESTPLATE
-color: 40,150,40 # RGB color
+color: 40,150,40 # RGB 颜色
 
-# Example with ARGB
-color: 1,40,150,40 # ARGB color, Alpha, RED, GREEN, BLUE
+# 使用ARGB的示例
+color: 1,40,150,40 # ARGB 颜色(Alpha, RED, GREEN, BLUE)
 ```
 
-Set the RGB color (Red, Green, Blue) for leather armorers. The format is as follows:
+给皮革装备设置RGB (Red, Green, Blue) 颜色. 格式:
 
 <pre class="language-yaml"><code class="lang-yaml"><strong>color: &#x3C;red>,&#x3C;green>,&#x3C;blue>
 </strong></code></pre>
 
-You can also add an alpha in the color to have ARGB
+你也可以添加Alpha值来拥有ARGB颜色：
 
 <pre class="language-yaml"><code class="lang-yaml"><strong>color: &#x3C;alpha>,&#x3C;red>,&#x3C;green>,blue>
 </strong></code></pre>
 
 {% hint style="info" %}
-The color format is the same for fireworks, banner and potion. \
-Javadocs for Color [here](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Color.html#fromARGB\(int,int,int,int\)).
+这个颜色格式同样应用于烟花和旗帜 \
+关于Color(颜色)类的Javadoc: [此处](https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/Color.html#fromARGB\(int,int,int,int\)).
 {% endhint %}
 
 ***
 
-## Firework
+## 烟花
 
 ```yaml
 type: FIREWORK
@@ -231,24 +231,24 @@ firework:
   trail: true
   type: BALL_LARGE
   colors:
-    - 250,10,10 # RGB and ARGB
+    - 250,10,10 # RGB 或 ARGB
   fadeColors:
-    - 250,10,250 # RGB and ARGB
+    - 250,10,250 # RGB 或 ARGB
 ```
 
-Firework type: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FireworkEffect.Type.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FireworkEffect.Type.html)
+烟花类型: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FireworkEffect.Type.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/FireworkEffect.Type.html)
 
 ***
 
-## Banner
+## 旗帜
 
 ```yaml
 type: BANNER
-banner: PINK # Banner color
-patterns: # Banner pattern: <color>:<pattern>
+banner: PINK # 旗帜颜色
+patterns: # 旗帜花纹: <颜色>:<花纹>
   - RED:SQUARE_BOTTOM_LEFT
   - GREEN:STRIPE_LEFT
 ```
 
-Allows you to create a banner. Pattern list: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/banner/PatternType.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/banner/PatternType.html)
+允许你创建一个旗帜。 花纹列表: [https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/banner/PatternType.html](https://hub.spigotmc.org/javadocs/spigot/org/bukkit/block/banner/PatternType.html)
 

@@ -1,5 +1,5 @@
 ---
-description: Player data system
+description: 玩家数据系统
 ---
 
 # 玩家数据
